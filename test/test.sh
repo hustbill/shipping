@@ -31,4 +31,4 @@ $DOCKER_CMD run \
     -e TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST \
     -e TRAVIS=$TRAVIS \
     test-container \
-    sh -c export PYTHONPATH=\$PYTHONPATH:\$PWD/test ; python test/"$@"
+    sh -c export PYTHONPATH=\$PYTHONPATH:\$PWD/test ; python "$@"
